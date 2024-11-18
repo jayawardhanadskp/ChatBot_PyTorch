@@ -17,4 +17,5 @@ for intent in intents['intents']:
         xy.append((w, tag)) # store the pattern and tag
 
 ignore_words = ['?', '!', '.', ',']
+all_words = [stem(w) for w in all_words if w not in ignore_words]
 print(all_words)
