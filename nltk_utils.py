@@ -16,6 +16,7 @@ def bag_of_words(tokenized_sentence, all_words):
     """
     Return a bag of words array:
     1 for each known word that exists in the sentence, 0 otherwise.
+    
     Example:
     sentence = ["hello", "how", "are", "you"]
     words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
@@ -33,15 +34,18 @@ def bag_of_words(tokenized_sentence, all_words):
 
     return bag
 
-# Sample sentence and all_words list
-sentence = "Hello, how are you?"
-tokenized_sentence = tokenize(sentence)
-words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
+# # Sample sentence and all_words list
+# sentence = "Hello, how are you?"
+# tokenized_sentence = tokenize(sentence)
+# words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
 
-# Get the bag of words
-bog = bag_of_words(tokenized_sentence, words)
+# # Get the bag of words
+# bog = bag_of_words(tokenized_sentence, words)
 
-print("Bag of words:", bog)
+# print("Bag of words:", bog)
+
+
+
 
 
 # a = "How long does delivery take?"

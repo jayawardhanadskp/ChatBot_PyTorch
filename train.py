@@ -1,9 +1,11 @@
 import json
 import numpy as np
 
+import torch
+import torch.nn as nn
+
 from nltk_utils import tokenize, stem, bag_of_words
 
-print(np.__version__)
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
