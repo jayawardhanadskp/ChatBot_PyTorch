@@ -1,5 +1,6 @@
 import nltk
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer
@@ -13,3 +14,8 @@ def stem(word):
 
 def bag_of_words(tokenized_sentence, all_words):
     pass
+
+a = "How long does delivery take?"
+print(a)
+a = tokenize(a)
+print(a)
