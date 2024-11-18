@@ -1,9 +1,9 @@
 import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
+# nltk.download('punkt')
+# nltk.download('punkt_tab')
 
 from nltk.stem.porter import PorterStemmer
-stemmer = PorterStemmer
+stemmer = PorterStemmer()
 
 def tokenize(sentaence):
     return nltk.word_tokenize(sentaence)
@@ -15,7 +15,11 @@ def stem(word):
 def bag_of_words(tokenized_sentence, all_words):
     pass
 
-a = "How long does delivery take?"
-print(a)
-a = tokenize(a)
-print(a)
+# a = "How long does delivery take?"
+# print(a)
+# a = tokenize(a)
+# print(a)
+
+words = ["Organize", "organizes", "organizing"]
+stemmed_words = [stem(w) for w in words]
+print(stemmed_words)  # Should output: ['organ', 'organ', 'organ']
