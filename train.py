@@ -63,10 +63,11 @@ hidden_size = 8
 output_size = len(tags)
 input_size = len(X_train[0])
 
-print(input_size, len(all_words))
-print(output_size, tags)
+# print(input_size, len(all_words)) 
+# print(output_size, tags)
 
 dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
 
-model = NeuralNet(input_size, hidden_size, output_size)
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model = NeuralNet(input_size, hidden_size, output_size).to(device)
