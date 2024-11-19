@@ -121,10 +121,10 @@
         "How soon can I get my order delivered?"
       ],
       "responses": [
-        "Delivery typically takes 2-4 days",
-        "Shipping takes between 2 to 4 business days",
-        "You can expect your delivery within 2 to 4 days",
-        "We offer delivery within 2 to 4 days depending on your location"
+        "Delivery typically takes 2-4 hours",
+        "Shipping takes between 2 to 4 hours",
+        "You can expect your delivery within 2 to 4 hours",
+        "We offer delivery within 2 to 4 hours depending on your location"
       ]
     },
     {
@@ -204,19 +204,21 @@
     },
     {
       "tag": "order_place",
-      "patterns": [
-        "How can I place an order?",
-        "How do I put order?",
-        "How can I order my coffee?",
-        "What’s the process to place an order?",
-        "How do I place an order with you?"
-      ],
-      "responses": [
-        "To place an order, simply browse our menu and let us know what you'd like! You can also use our app to order ahead.",
-        "You can place an order by selecting your drinks and snacks, and either order in-store or use our online ordering system.",
-        "Just pick your favorite items from the menu and let us know your order! You can also order online for delivery or pickup.",
-        "To order, simply choose your items and either come in or place an order through our app."
-      ]
+  "patterns": [
+    "How can I place an order?",
+    "How do I put order?",
+    "How can I order my coffee?",
+    "What’s the process to place an order?",
+    "How do I place an order with you?",
+    "How can I order a coffee?"  
+  ],
+  "responses": [
+    "To place an order, simply browse our menu and let us know what you'd like! You can also use our app to order ahead.",
+    "You can place an order by selecting your drinks and snacks, and either order in-store or use our online ordering system.",
+    "Just pick your favorite items from the menu and let us know your order! You can also order online for delivery or pickup.",
+    "To order, simply choose your items and either come in or place an order through our app.",
+    "To order a coffee, just let me know what type of coffee you'd like, and I can assist you with the rest!"
+  ]
     }
   ]
 }

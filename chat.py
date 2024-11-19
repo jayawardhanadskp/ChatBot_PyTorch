@@ -23,8 +23,8 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "Sam"
-print(f"{'Welcome to chat with {bot_name}':^60}\n\n")
+bot_name = "ChatBrew"
+print(f"{'Welcome to chat with ChatBrew':^60}\n\n")
 while True:
     sentence = input("You: ")
     if sentence == "quit":
