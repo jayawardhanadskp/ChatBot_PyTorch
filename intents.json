@@ -1,84 +1,222 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Take care",
+        "I'm leaving"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye, enjoy your day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure",
+        "You're welcome!"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?",
+        "What's on the menu?",
+        "What drinks do you offer?"
+      ],
+      "responses": [
+        "We sell coffee, tea, pastries, and snacks",
+        "We have a variety of coffee blends, teas, and light bites",
+        "Our menu includes lattes, cappuccinos, espresso, teas, and cakes",
+        "We serve hot and cold beverages, including coffee, tea, and smoothies"
+      ]
+    },
+    {
+      "tag": "coffee_types",
+      "patterns": [
+        "What kind of coffee do you serve?",
+        "Do you have espresso?",
+        "What is a cappuccino?",
+        "Do you serve iced coffee?",
+        "What types of coffee drinks do you offer?"
+      ],
+      "responses": [
+        "We offer espresso, cappuccinos, lattes, iced coffee, and more!",
+        "We have a range of coffees: espresso, americano, cappuccino, latte, and cold brew",
+        "Our coffee menu includes espresso, macchiato, cappuccino, flat white, and more!",
+        "We serve hot and cold coffee options including iced lattes, iced mochas, and americanos"
+      ]
+    },
+    {
+      "tag": "pastries",
+      "patterns": [
+        "Do you have pastries?",
+        "What kind of snacks do you have?",
+        "Are there any cakes or muffins?",
+        "What baked goods do you offer?"
+      ],
+      "responses": [
+        "We have a selection of muffins, croissants, and cakes",
+        "We offer freshly baked pastries, cakes, and cookies",
+        "Our bakery menu includes chocolate chip cookies, croissants, and lemon cakes",
+        "We have pastries, including cinnamon rolls, scones, and chocolate croissants"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "What payment methods do you accept?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard, and Paypal",
+        "We accept most major credit cards and Paypal",
+        "You can pay with Visa, MasterCard, or Paypal",
+        "We accept all major credit cards and Paypal for payments"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?",
+        "Do you offer home delivery?",
+        "How soon can I get my order delivered?"
+      ],
+      "responses": [
+        "Delivery typically takes 2-4 days",
+        "Shipping takes between 2 to 4 business days",
+        "You can expect your delivery within 2 to 4 days",
+        "We offer delivery within 2 to 4 days depending on your location"
+      ]
+    },
+    {
+      "tag": "hours_of_operation",
+      "patterns": [
+        "What are your working hours?",
+        "When do you open?",
+        "When do you close?",
+        "What time do you open and close?"
+      ],
+      "responses": [
+        "We are open Monday to Friday from 7 AM to 8 PM and weekends from 9 AM to 5 PM",
+        "Our hours are 7 AM to 8 PM Monday through Friday, and 9 AM to 5 PM on weekends",
+        "We open at 7 AM and close at 8 PM on weekdays. On weekends, we close at 5 PM",
+        "We're open from 7 AM to 8 PM Monday to Friday, and 9 AM to 5 PM on Saturdays and Sundays"
+      ]
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "Do you have a loyalty program?",
+        "How can I earn rewards?",
+        "Do you offer any discounts for regular customers?",
+        "Do you have a rewards system?"
+      ],
+      "responses": [
+        "Yes, we have a loyalty program! Earn points with every purchase and redeem them for free drinks or discounts.",
+        "We offer a loyalty program where you earn points for each purchase. Collect points for special rewards.",
+        "Sign up for our loyalty program to get exclusive discounts and earn rewards for every purchase!",
+        "Earn points with every purchase and enjoy exclusive rewards! Ask us about the loyalty program when you're in."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Can you make me laugh?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison.",
+        "Why don’t coffee beans gossip? They don’t want to espresso too much!",
+        "What’s the best way to enjoy a cup of coffee? With a lot of good conversation!"
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?",
+        "Where is your coffee shop?",
+        "What is your address?",
+        "Where can I find you?"
+      ],
+      "responses": [
+        "We're located at 123 Brew Street, Coffee Town",
+        "You can find us at 123 Brew Street, Coffee Town, just near the park",
+        "Our coffee shop is located at 123 Brew Street, Coffee Town, across from the library",
+        "We’re at 123 Brew Street, Coffee Town, right next to the city park"
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "Has my order shipped?",
+        "When will my coffee be ready?",
+        "How do I check the status of my order?"
+      ],
+      "responses": [
+        "Please check your email for the latest updates on your order status.",
+        "Your order is currently being processed. You will receive an update once it ships.",
+        "You can track your order status in the 'My Orders' section on our website or app.",
+        "You should receive a notification once your order is ready for pickup or has shipped."
+      ]
+    },
+    {
+      "tag": "order_place",
+      "patterns": [
+        "How can I place an order?",
+        "How do I put order?",
+        "How can I order my coffee?",
+        "What’s the process to place an order?",
+        "How do I place an order with you?"
+      ],
+      "responses": [
+        "To place an order, simply browse our menu and let us know what you'd like! You can also use our app to order ahead.",
+        "You can place an order by selecting your drinks and snacks, and either order in-store or use our online ordering system.",
+        "Just pick your favorite items from the menu and let us know your order! You can also order online for delivery or pickup.",
+        "To order, simply choose your items and either come in or place an order through our app."
+      ]
+    }
+  ]
+}
