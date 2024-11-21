@@ -120,3 +120,23 @@ while True:
 # Can I add an extra shot to my espresso?
 #
 # What type of espresso drinks do you serve?
+
+
+
+
+
+# Hi
+
+# How can I order my coffee? 
+
+# What payment methods do you accept? 
+# what paument methods do you accept?
+
+# How can I earn rewards?
+# how can i earn rewards?
+
+# Can I customize my coffee order?
+
+# Do you serve iced coffee?
+
+# Can I customize my coffee order?"

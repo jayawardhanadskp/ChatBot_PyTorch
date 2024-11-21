@@ -1,6 +1,6 @@
 import random
 from flask import Flask, request, jsonify
-from model import NeuralNet  # Import your trained model here
+from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 import torch
 import json
@@ -44,15 +44,16 @@ def chat():
     tag = tags[predicted.item()]
 
     # Find response from intents
+    response = None
     for intent in intents['intents']:
         if tag == intent["tag"]:
-            response = {"response": random.choice(intent["responses"])}
+            response = random.choice(intent["responses"])
 
     # If no response found, fallback
     if not response:
-        response = {"response": "I'm not sure I understand that."}
+        response = "I'm not sure I understand that."
 
-    return jsonify(response)
+    return jsonify({"response": response})
 
 if __name__ == '__main__':
     app.run(debug=True)
