@@ -25,11 +25,23 @@ A conversational AI chatbot designed to assist customers in a coffee shop app. I
 - **PyTorch**: Deep learning framework for training the chatbot's neural network model.
 - **NLTK (Natural Language Toolkit)**: For text preprocessing, including tokenization and stemming.
 - **JSON**: Format used for storing intents, patterns, and responses.
+- **Flask**: Web framework to build the chatbot's API for handling user requests.
+
 
 ---
+
+## API Integration
+
+This project includes an API endpoint built with Flask that allows users to interact with the chatbot.
+
+**/ chat** Endpoint
+- Method: POST
 
 ## Setup Instructions
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/jayawardhanadskp/ChatBot_PyTorch.git
+
+
+
